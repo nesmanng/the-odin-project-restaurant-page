@@ -22,6 +22,11 @@ module.exports = {
             template: './src/menu/menu.html',
             chunks: ['main']
         }),
+        new HtmlWebpackPlugin({
+            filename: 'promotions.html',
+            template: './src/promotions/promotions.html',
+            chunks: ['main']
+        })
     ],
     module: {
         rules: [

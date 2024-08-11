@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+SC:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f0f0f0;
+
+    min-height: 100%;
+    width: 100%;
+}
+
+.site-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 100vh;
+}
+
+.site-header {
+    background-color: black;
+}
+
+#promotions {
+    padding: 40px 0;
+}
+
+.promotions-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.promotions-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.promotions-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.promotions-item h3 {
+    margin-top: 0;
+}
+
+.promotions-description {
+    color: black;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    
+    .nav-item {
+        text-align: center;
+    }
+    
+    .promotions-section {
+        grid-template-columns: 1fr;
+    }
+}

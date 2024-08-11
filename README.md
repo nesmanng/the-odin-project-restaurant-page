@@ -20,6 +20,7 @@ This project is a website for XX's Cocktail Bar, an internationally recognized c
 
 ## Project Structure
 
+```plaintext
 project-root/
 │
 ├── src/

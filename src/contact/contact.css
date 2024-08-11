@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+SC:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f0f0f0;
+
+    min-height: 100%;
+    width: 100%;
+}
+
+.site-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 100vh;
+}
+
+.site-header {
+    background-color: black;
+}
+
+.contact-section {
+    padding: 40px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-divider {
+    width: 50px;
+    border: 1px solid #333;
+    margin: 20px auto;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-details h4 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: calc(33.333% - 20px);
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .contact-item {
+        flex-basis: 100%;
+    }
+}
